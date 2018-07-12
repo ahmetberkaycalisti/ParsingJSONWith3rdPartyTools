@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParsingJSONWith3rdPartyTools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="m3r-yt-aN7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="121.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1it-Nx-gRZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKk-yn-NQj">
+                                        <rect key="frame" x="0.0" y="50.5" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFp-WS-DST">
+                                        <rect key="frame" x="0.0" y="101" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1it-Nx-gRZ" firstAttribute="top" secondItem="m3r-yt-aN7" secondAttribute="top" id="4aP-qE-9ng"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFp-WS-DST" secondAttribute="trailing" id="Eai-2y-f2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="WKk-yn-NQj" secondAttribute="trailing" id="QFh-I8-Gu9"/>
+                                    <constraint firstItem="bFp-WS-DST" firstAttribute="leading" secondItem="m3r-yt-aN7" secondAttribute="leading" id="YGc-bH-3rd"/>
+                                    <constraint firstItem="1it-Nx-gRZ" firstAttribute="leading" secondItem="m3r-yt-aN7" secondAttribute="leading" id="fxq-pm-8DZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1it-Nx-gRZ" secondAttribute="trailing" id="jjs-Dc-PXW"/>
+                                    <constraint firstItem="WKk-yn-NQj" firstAttribute="leading" secondItem="m3r-yt-aN7" secondAttribute="leading" id="oB0-dx-1kQ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="61U-dX-RGM">
+                                <rect key="frame" x="0.0" y="225" width="375" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-sE-Mwo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <state key="normal" title="SwiftyJSON Person"/>
+                                        <connections>
+                                            <action selector="getSwiftyPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8H-ZY-9G2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sse-py-wdA">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                        <state key="normal" title="Freddy Person"/>
+                                        <connections>
+                                            <action selector="getFredyPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2b-Wx-rwo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qY-Tc-Zmq">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="30"/>
+                                        <state key="normal" title="Gloss Person"/>
+                                        <connections>
+                                            <action selector="getGlossPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWx-Qu-hM8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-BN-bSJ">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UD1-Qa-2N4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61U-dX-RGM" secondAttribute="trailing" id="05W-K5-5wJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m3r-yt-aN7" secondAttribute="trailing" id="34e-qt-7sR"/>
+                            <constraint firstItem="m3r-yt-aN7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="79G-As-Oa3"/>
+                            <constraint firstItem="61U-dX-RGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q3y-8W-eVX"/>
+                            <constraint firstItem="m3r-yt-aN7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vcO-kM-uyD"/>
+                            <constraint firstItem="61U-dX-RGM" firstAttribute="top" secondItem="m3r-yt-aN7" secondAttribute="bottom" constant="75.5" id="wng-14-cqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyLabel" destination="bFp-WS-DST" id="yS5-ls-IMN"/>
+                        <outlet property="locationLabel" destination="WKk-yn-NQj" id="KBt-dv-fQO"/>
+                        <outlet property="name" destination="m3r-yt-aN7" id="zXP-n2-gCs"/>
+                        <outlet property="nameLabel" destination="1it-Nx-gRZ" id="GA8-dP-ebP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
